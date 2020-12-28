@@ -1,112 +1,112 @@
-ID,Name
-6,Auctions
-8,Contract Theory and the Economics of Organization 
-20,Economics of the European Union
-22,Forvaltningslære
-23,Forvaltningsret
-25,International Trade and Investment: Theory and Policy
-26,International Monetary Economics
-29,Investment Theory
-40,Monetary Policy
-43,Organization Theory
-44,Offentlig udgiftspolitik
-45,Operation Research
-46,Political Economics
-48,Regnskabsanalyse og aktievurdering
-50,Skatteret
-53,Game Theory
-57,Health Economics
-58,Telecommunications Economics
-59,History of Economic Thought (Teorihistorie)
-65,Development Economics
-67,Advanced Industrial Organization
-69,Advanced Microeconomics
-71,Advanced Macroeconometrics
-74,Economic History of Globalization
-76,Økonomiske prognoser i praksis
-81,Matematik A
-107,Erhvervsret
-121,International Economics
-136,Industrial Organization
-138,Economic Growth
-141,Behavioral and Experimental Economics
-142,Asset pricing theory
-148,Samfundsbeskrivelse B
-149,Advanced Development Economics - Micro aspects
-151,Advanced Development Economics - Macro aspects
-152,Økonomiske principper A
-153,Økonomiske principper B
-154,Financial Markets
-161,Corporate Finance and Incentives
-163,Sandsynlighedsteori og statistik
-166,Economics of Banking
-168,Mikro I
-172,Mikro II
-173,International Finance
-174,Public Finance
-183,Corporate Finance Theory
-187,Mikroøkonomi III
-190,Fixed Income Derivative
-202,Behavioral Finance
-204,Samfundsbeskrivelse A
-207,Advanced Macroeconomics
-209,Matematik B
-212,Financial Econometrics A
-224,Videnskabsteori for økonomi
-225,Økonomisk historie
-228,Makroøkonomi I
-230,Økonometri I - tag-hjem eksamen
-232,Makroøkonomi II
-235,The Danish Welfare Model
-236,Tax Policy
-237,Makroøkonomi III
-238,Programmering og statistik med SAS
-239,Dynamiske modeller
-240,Erhvervsøkonomi
-241,Economics of Welfare
-242,Lineære modeller
-244,Marketing
-245,"Miljø-, ressource- og klimaøkonomi"
-246,Managerial Accounting
-247,Pricing Financial Assets
-248,Economic Sociology
-249,Family Economics
-250,The Psychology of Choice
-252,Theoretical and Empirical Foundation of DSGE Modeling
-253,Economics of Education
-254,Multivariat analyse og kategoriserede data
-255,Advanced Development Economics: Applied Macroeconomics and Policy Analysis
-256,Årsregnskab og regnskabsanalyse
-258,Labour Economics
-259,Economic History of Europe
-260,Science of Behavior Change
-261,Strategic Management
-262,Offentlig forvaltning og politik
-263,Applied Economics
-264,Advanced International Trade
-265,Financial Frictions
-266,International Macro
-267,Praktisk Tidsrækkeanalyse
-268,Incentives and Organizations
-269,Foundations in Behavioural Economics
-270,Economics of Exchange Rates
-271,Econometrics II
-273,Applied Econometric Policy Evaluation
-274,Dynamic Political Economy
-275,Bayesian Econometrics
-276,Advanced Microeconometrics
-277,Advanced Macroeconomics: Business Cycles
-278,Derivatives Pricing
-279,Advanced Macroeconomics: Structural Vector Autoregressive Analysis
-280,Auctions Theory and Practice
-281,Introduction to Programming and Numerical Analysis
-282,Kapitalmarkedsforhold
-283,Anvendt økonomisk modellering
-284,Financial Theory and Models
-285,Social Data Science: Text Data and Deep Learning
-286,Social Data Science: Econometrics and Machine Learning
-287,Financial Markets Microstructure
-288,Macroprudential policy and systemic financial risks
-289,Advanced Financial and Macro Econometrics
-290,Macroeconomic Risk Management
-291,Economics of Misbehavior
+ID;Name
+6;Auctions
+8;Contract Theory and the Economics of Organization 
+20;Economics of the European Union
+22;Forvaltningslære
+23;Forvaltningsret
+25;International Trade and Investment: Theory and Policy
+26;International Monetary Economics
+29;Investment Theory
+40;Monetary Policy
+43;Organization Theory
+44;Offentlig udgiftspolitik
+45;Operation Research
+46;Political Economics
+48;Regnskabsanalyse og aktievurdering
+50;Skatteret
+53;Game Theory
+57;Health Economics
+58;Telecommunications Economics
+59;History of Economic Thought (Teorihistorie)
+65;Development Economics
+67;Advanced Industrial Organization
+69;Advanced Microeconomics
+71;Advanced Macroeconometrics
+74;Economic History of Globalization
+76;Økonomiske prognoser i praksis
+81;Matematik A
+107;Erhvervsret
+121;International Economics
+136;Industrial Organization
+138;Economic Growth
+141;Behavioral and Experimental Economics
+142;Asset pricing theory
+148;Samfundsbeskrivelse B
+149;Advanced Development Economics - Micro aspects
+151;Advanced Development Economics - Macro aspects
+152;Økonomiske principper A
+153;Økonomiske principper B
+154;Financial Markets
+161;Corporate Finance and Incentives
+163;Sandsynlighedsteori og statistik
+166;Economics of Banking
+168;Mikro I
+172;Mikro II
+173;International Finance
+174;Public Finance
+183;Corporate Finance Theory
+187;Mikroøkonomi III
+190;Fixed Income Derivative
+202;Behavioral Finance
+204;Samfundsbeskrivelse A
+207;Advanced Macroeconomics
+209;Matematik B
+212;Financial Econometrics A
+224;Videnskabsteori for økonomi
+225;Økonomisk historie
+228;Makroøkonomi I
+230;Økonometri I - tag-hjem eksamen
+232;Makroøkonomi II
+235;The Danish Welfare Model
+236;Tax Policy
+237;Makroøkonomi III
+238;Programmering og statistik med SAS
+239;Dynamiske modeller
+240;Erhvervsøkonomi
+241;Economics of Welfare
+242;Lineære modeller
+244;Marketing
+245;Miljø-, ressource- og klimaøkonomi
+246;Managerial Accounting
+247;Pricing Financial Assets
+248;Economic Sociology
+249;Family Economics
+250;The Psychology of Choice
+252;Theoretical and Empirical Foundation of DSGE Modeling
+253;Economics of Education
+254;Multivariat analyse og kategoriserede data
+255;Advanced Development Economics: Applied Macroeconomics and Policy Analysis
+256;Årsregnskab og regnskabsanalyse
+258;Labour Economics
+259;Economic History of Europe
+260;Science of Behavior Change
+261;Strategic Management
+262;Offentlig forvaltning og politik
+263;Applied Economics
+264;Advanced International Trade
+265;Financial Frictions
+266;International Macro
+267;Praktisk Tidsrækkeanalyse
+268;Incentives and Organizations
+269;Foundations in Behavioural Economics
+270;Economics of Exchange Rates
+271;Econometrics II
+273;Applied Econometric Policy Evaluation
+274;Dynamic Political Economy
+275;Bayesian Econometrics
+276;Advanced Microeconometrics
+277;Advanced Macroeconomics: Business Cycles
+278;Derivatives Pricing
+279;Advanced Macroeconomics: Structural Vector Autoregressive Analysis
+280;Auctions Theory and Practice
+281;Introduction to Programming and Numerical Analysis
+282;Kapitalmarkedsforhold
+283;Anvendt økonomisk modellering
+284;Financial Theory and Models
+285;Social Data Science: Text Data and Deep Learning
+286;Social Data Science: Econometrics and Machine Learning
+287;Financial Markets Microstructure
+288;Macroprudential policy and systemic financial risks
+289;Advanced Financial and Macro Econometrics
+290;Macroeconomic Risk Management
+291;Economics of Misbehavior
