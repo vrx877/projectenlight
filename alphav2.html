@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Enlight</title>
+    <link rel="stylesheet" href="accesible-autocomplete.css">
+    <script type="text/javascript" src="https://alphagov.github.io/accessible-autocomplete/dist/accessible-autocomplete.min.js"></script>
+    <script>
+        // Change to your URL (Must have Access-Control-Allow-Origin header to allow CORS)
+        var csvUrl = 'https://raw.githubusercontent.com/vrx877/projectenlight/main/finaldb.csv';
+        
+        // Init Ajax Object
+        var ajax = new XMLHttpRequest();
+
+        // Set a GET request to the URL which points to your CSV file
+        ajax.open('GET', csvUrl);
+
+        // Set the action that will take place once the browser receives your CSV
+        ajax.onreadystatechange = function() {
+          if (ajax.readyState === XMLHttpRequest.DONE && ajax.status === 200) {
+            // Request was successful
+            csvData = ajax.responseText; // defined globally!
+          }
+        }
+
+        // Send request
+        ajax.send();
+        
+        
+        // DO THIS AGAIN WITH NEW URL
+        // Change to your URL (Must have Access-Control-Allow-Origin header to allow CORS)
+        var csvUrl2 = 'https://raw.githubusercontent.com/vrx877/projectenlight/main/fag_liste.csv';
+        
+        // Init Ajax Object
+        var ajax2 = new XMLHttpRequest();
+
+        // Set a GET request to the URL which points to your CSV file
+        ajax2.open('GET', csvUrl2);
+
+        // Set the action that will take place once the browser receives your CSV
+        ajax2.onreadystatechange = function() {
+            if (ajax2.readyState === XMLHttpRequest.DONE && ajax2.status === 200) {
+                // Request was successful
+                var rows = ajax2.responseText.split('\n');
+                fag = {} // defined globally!
+                for (var i = 1; i < rows.length; i++) {
+                    var row = rows[i]; // row 1 is header
+                    var cells = row.split(';');
+                    fag[cells[1]] = cells[0];
+                }
+              
+                htmlStr = '<option value=""></option>';
+                for (var i = 0; i < Object.keys(fag).length; i++) {
+                    var row = Object.keys(fag)[i]; // row 1 is header
+                    htmlStr += '<option value="'+fag[row]+'">'+row+'</option>';
+                }
+                
+                document.getElementById("course-box").innerHTML = htmlStr;
+                
+                var selectEl = document.querySelector('#course-box')
+                accessibleAutocomplete.enhanceSelectElement({
+                displayMenu: 'overlay',
+                autoselect: true,
+                confirmOnBlur: false,
+                defaultValue: "",
+                placeholder: 'Search for a course',
+                minLength: 0,
+                onConfirm: (val) => {
+                    handleCSVResult(fag[val]);
+                    setTimeout(function() {document.activeElement.blur();}, 1);
+                    history.pushState(null, null, "?courseID="+fag[val]);
+                },
+                selectElement: selectEl
+                })    
+
+            }
+        }
+
+        // Send request
+        ajax2.send();   
+        
+        function handleCSVResult(my_ID) {
+          // Get the div element to append the data to
+          var dataArea = document.querySelector('#csv_data');
+
+          // Split csv to rows
+          var rows = csvData.split('\n');
+
+          var htmlStr = '';
+
+          // Iterate over each row
+          for (var i = 1; i < rows.length; i++) {
+            var row = rows[i]; // row 1 is header
+
+            // split row to cells
+            var cells = row.split(';');
+
+            // Extract data from cell 1-4 of current row
+            var FagID = cells[0];
+            var FagName = cells[1];
+            var FagLink = cells[2];
+            var FagExam = cells[3];
+            var FagQuestion = cells[4];
+            var FagAnswer = cells[5];
+
+            // Add extracted CSV data to string
+
+            if(FagID===my_ID){
+            htmlStr += '<p>'+ FagExam +': <a href="'+ FagQuestion +'" target="_blank">Eksamen</a>'+' <a href="'+ FagAnswer+'" target="_blank">Rettevejledning</a>' + '</p>'} ; // Build each line of exams
+          }
+
+          // Set the string generated from CSV as HTML of the dedicated div
+          dataArea.innerHTML = htmlStr;
+        }
+
+
+        
+    </script>
+      
+      
+  </head>
+  <body>
+    
+        <div class="autocomplete-wrapper" style="border:none">
+          <select name="course-box" id="course-box" style="border:none">
+            <option value=""></option>
+          </select>
+        </div>
+        
+    <div id="csv_data"></div>
+  </body>
+</html>
+
