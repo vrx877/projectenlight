@@ -99,7 +99,7 @@
                 confirmOnBlur: false,
                 defaultValue: "",
                 placeholder: 'Search for a course',
-                minLength: 2,
+                minLength: 1,
                 onConfirm: (val) => {
                     handleCSVResult(fag[val]);
                     setTimeout(function() {document.activeElement.blur();}, 1);
