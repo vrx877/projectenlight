@@ -2,6 +2,16 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+.csv_data {
+        width:50%;
+        margin:auto;
+        color:black;
+    }
+    .csv_data a:link, .navigation-div a:visited {
+        color:black;
+        font-weight: 200;
+    }
+
 .autocomplete__wrapper {
     position:relative;
     width:50%;
@@ -147,7 +157,10 @@ textarea:focus, input:focus{
     width:80%;
     margin: auto;
     margin-top: 20px;
-}
-
+    }
+    .csv_data {
+        width:80%;
+        font-size:12px;
+    }
 }
 
