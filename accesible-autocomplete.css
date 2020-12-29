@@ -5,6 +5,7 @@ textarea:focus, input:focus{
 .autocomplete__wrapper {
     position:relative;
     width:50%;
+    margin: auto;
 }
 
 .autocomplete__hint, .autocomplete__input {

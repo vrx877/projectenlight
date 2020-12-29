@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+    body {
+    font-family: helvetica;
+    }
+    body:after{
+      content: "beta";
+      position: fixed;
+      width: 80px;
+      height: 25px;
+      background: #EE8E4A;
+      top: 7px;
+      right: -20px;
+      text-align: center;
+      font-size: 13px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+      line-height: 27px;
+      transform:rotate(45deg);
+    }
+    .csv_data {
+        width:50%;
+        margin:auto;
+        color:black;
+    }
+    .csv_data a:link, .navigation-div a:visited {
+        color:black;
+        font-weight: 200;
+    }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project Enlight</title>
@@ -126,9 +157,12 @@
           <select name="course-box" id="course-box" style="border:none">
             <option value=""></option>
           </select>
+            
+        <div id="csv_data" class="csv_data"></div>
+            
         </div>
         
-    <div id="csv_data"></div>
+    
   </body>
 </html>
 
