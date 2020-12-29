@@ -141,3 +141,13 @@ textarea:focus, input:focus{
     }
 }
 
+@media (max-width: 640px) {
+    .autocomplete__wrapper {
+    position:relative;
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+}
+
