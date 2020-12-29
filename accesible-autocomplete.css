@@ -18,6 +18,7 @@ textarea:focus, input:focus{
     -webkit-box-sizing: border-box;
     margin-bottom: 0;
     width:100%;
+    font-weight:bold;
 }
 
 .autocomplete__input {
